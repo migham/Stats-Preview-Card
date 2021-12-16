@@ -141,8 +141,6 @@ body{
 		border-top-right-radius: var(--radius);
 		background-image:linear-gradient(var(--accent-t), var(--accent-t)), url(./images/image-header-mobile.jpg);
 		background-size:cover;
-		
-		border: 1px solid red;
 	}
 
 	.stats{
