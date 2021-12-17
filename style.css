@@ -3,61 +3,59 @@
 :root{
 	--inter    : 'Inter',       sans-serif;
 	--lex      : 'Lexend Deca', sans-serif;
+	font-size  : 15px;
 
 	--bg       : hsl(233, 47%, 7%);
 	--card-bg  : hsl(244, 38%, 16%);
 	--accent   : hsl(277, 64%, 61%);
-	--accent-t   : hsla(277, 75%, 30%, 0.624);
+	--accent-t : hsla(277, 75%, 30%, 0.6);
 
 	--stats    : hsl(0, 0%, 100%);
 	--paragraph: hsla(0, 0%, 100%, 0.75);
 	--heading  : hsla(0, 0%, 100%, 0.6);
 
 	--radius   : 0.7rem;
-	
-	font-size  : 15px;	
 }
 
 body{
-	display: flex;	
-	flex-direction: column;
-	justify-content: center;
-	height: 100vh;
+	display         : flex;
+	flex-direction  : column;
+	justify-content : center;
+	height          : 100vh;
 	background-color: var(--bg);
-	
 }
 
 .card{
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
+	display         : flex;
+	justify-content : space-between;
+	align-items     : center;
 	background-color: var(--card-bg);
-	border-radius: var(--radius);
-	margin: auto;
-	align-content: center;
+	border-radius   : var(--radius);
+	margin          : auto;
+	align-content   : center;
 }
 
 .pre{
-	width: 450px;
+	width  : 450px;
 	padding: 3.5em 6em 3.5em 4em;
 }
 
 .pre>p{
-	color: var(--paragraph);
-	font-family: var(--inter);
-	font-weight: 400;
-	line-height: 1.8em;
-	text-align: left;
-	margin-top: 2rem;
+	color        : var(--paragraph);
+	font-family  : var(--inter);
+	font-weight  : 400;
+	line-height  : 1.8em;
+	text-align   : left;
+	margin-top   : 2rem;
 	padding-right: 5em;
-	font-size: 1rem;
+	font-size    : 1rem;
 }
 
 .header{
-	color: var(--stats);
-	font-family: var(--lex);
+	color        : var(--stats);
+	font-family  : var(--lex);
 	padding-right: 3rem;
-	font-size: 2.4rem;
+	font-size    : 2.4rem;
 }
 
 .header>span{
@@ -65,43 +63,46 @@ body{
 }
 
 .image-header{
-	width: 540px;
+	width : 540px;
 	height: 100%;
 	
-	border-top-right-radius: var(--radius);
+	border-top-right-radius   : var(--radius);
 	border-bottom-right-radius: var(--radius);
 	
 	/* background-color: hsla(277, 64%, 61%, 0.4);
 	background-image: url('./images/image-header-desktop.jpg');
 	background-position: right;
 	 */
-	background-image:linear-gradient(var(--accent-t), var(--accent-t)), url(./images/image-header-desktop.jpg);
+	background-image : linear-gradient(
+		var(--accent-t), 
+		var(--accent-t)), 
+		url(./images/image-header-desktop.jpg);
 	background-repeat: no-repeat;
-	background-size: 100% 100%;	
+	background-size  : 100% 100%;
 }
 
 .stats{
-	display: flex;
+	display        : flex;
 	justify-content: space-between;
-	margin: 0;
-	margin-top: 3rem;
-	width: 75%;
-	color: var(--stats);
+	margin         : 0;
+	margin-top     : 3rem;
+	width          : 75%;
+	color          : var(--stats);
 }
 
 .stats h2{
-	font-family: var(--inter);
-	font-weight: 900;
+	font-family  : var(--inter);
+	font-weight  : 900;
 	margin-bottom: 0.35rem;
 }
 .stats p{
 	text-transform: uppercase;
-	font-family: var(--lex);
-	color: var(--paragraph);
+	font-family   : var(--lex);
+	color         : var(--paragraph);
 }
 
 .attribution{
-	color: var(--paragraph);
+	color         : var(--paragraph);
 	padding-bottom: 0.3rem;
 }
 
@@ -111,52 +112,55 @@ body{
 
 @media screen and (max-width: 420px) {
 	body{
-		height: 100vh;
+		height : 100vh;
 		display: block;
 	}
 	.card{
 		flex-direction: column-reverse;
-		width: 90%;
-		margin-bottom: 5rem;
-		margin-top: 100px;
+		width         : 90%;
+		margin-bottom : 5rem;
+		margin-top    : 100px;
 	}
 
 	.pre{
-		width: 90%;
-		padding-left: 0;
-		padding-right: 0;
-		padding-top: 3rem;
+		width         : 90%;
+		padding-left  : 0;
+		padding-right : 0;
+		padding-top   : 3rem;
 		flex-direction: column;
-		text-align: center;
-		margin: 0;
+		text-align    : center;
+		margin        : 0;
 	}
 	.pre>.header, .pre>p{
-		padding-left: 0;
+		padding-left : 0;
 		padding-right: 0;
-		text-align: center;
+		text-align   : center;
 	}
 	.header{
-		font-size: 2rem;
+		font-size : 2rem;
 		margin-top: 0;
 	}
 	.pre>p{
-		padding-left: 1rem;
+		padding-left : 1rem;
 		padding-right: 1rem;
 	}
 
 	.image-header{
-		width: 100%;
-		height: 247px;
-		border-radius: 0;
-		border-top-left-radius: var(--radius);
+		width                  : 100%;
+		height                 : 247px;
+		border-radius          : 0;
+		border-top-left-radius : var(--radius);
 		border-top-right-radius: var(--radius);
-		background-image:linear-gradient(var(--accent-t), var(--accent-t)), url(./images/image-header-mobile.jpg);
-		background-size:cover;
+		background-image       : linear-gradient(
+				var(--accent-t), 
+				var(--accent-t)), 
+				url(./images/image-header-mobile.jpg);
+		background-size        : cover;
 	}
 
 	.stats{
 		flex-direction: column;
-		align-items: center;
-		margin: auto;
+		align-items   : center;
+		margin        : auto;
 	}
 }
