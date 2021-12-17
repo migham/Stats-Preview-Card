@@ -79,3 +79,5 @@ If someone can explain why, I would be very grateful!
 - [The peculiar magic of flexbox and auto margins](https://css-tricks.com/the-peculiar-magic-of-flexbox-and-auto-margins/): Helped me better understand element centering using flexbox.
 - [CSS para oscurecer o colorear una imagen](https://comolademo.es/css-oscurecer-colorear-imagen/) This was the solution I ended up using to add a filter.
 
+---
+Thanks for readme!
